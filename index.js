@@ -18,8 +18,9 @@ function textChange() {
     if(document.getElementById('boringRadioButton').checked == true){
         document.getElementById("Text").style.fontWeight= "normal";
         document.getElementById("Text").style.color="black";
+        document.getElementById("Text").style.fontSize='default';
         document.getElementById("Text").style.textDecoration= "none";
-         alert("Styles were removed from the text.")
+        alert("Styles were removed from the text.")
     }
 }
 
@@ -28,6 +29,6 @@ function mooButton(){
     var upper= str.toUpperCase();
     var parts= upper.split(".");
     str= parts.join("-Moo");
-    document.getElementById("text").value= str;
+    //document.getElementById("text").value= str;
     alert("The above text has changes. It will now have a moo at the end of words.")
 }
