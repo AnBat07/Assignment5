@@ -26,7 +26,7 @@ function textChange() {
 
 function mooButton(){
    var textToChange = document.getElementById("Text");
-   textToChange = textToChange.toUpperCase();
+   textToChange.toUpperCase();
    var parts= textToChange.split(".");
    textTochange= parts.join("-Moo");
    alert("The above text has changes. It will now have a moo at the end of words.")
