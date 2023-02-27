@@ -10,6 +10,7 @@ function textChange() {
         document.getElementById("Text").style.fontWeight= "bold";
         document.getElementById("Text").style.color= "blue";
         document.getElementById("Text").style.textDecoration= "underline";
+         alert("Styles were added to the text.")
     }
 
     //checks to see if boring button is clicked
@@ -18,13 +19,15 @@ function textChange() {
         document.getElementById("Text").style.fontWeight= "normal";
         document.getElementById("Text").style.color="black";
         document.getElementById("Text").style.textDecoration= "none";
+         alert("Styles were removed from the text.")
     }
 }
 
 function mooButton(){
     var str = document.getElementById("text").value;
-    var upper= text.toUpperCase();
+    var upper= str.toUpperCase();
     var parts= upper.split(".");
-    txt= parts.join("-Moo");
-    document.getElementById("text").value= txt;
+    str= parts.join("-Moo");
+    document.getElementById("text").value= str;
+    alert("The above text has changes. It will now have a moo at the end of words.")
 }
