@@ -18,7 +18,7 @@ function textChange() {
     if(document.getElementById('boringRadioButton').checked == true){
         document.getElementById("Text").style.fontWeight= "normal";
         document.getElementById("Text").style.color="black";
-        document.getElementById("Text").style.fontSize='default';
+        document.getElementById("Text").style.fontSize='16px';
         document.getElementById("Text").style.textDecoration= "none";
         alert("Styles were removed from the text.")
     }
