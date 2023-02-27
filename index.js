@@ -18,16 +18,16 @@ function textChange() {
     if(document.getElementById('boringRadioButton').checked == true){
         document.getElementById("Text").style.fontWeight= "normal";
         document.getElementById("Text").style.color="black";
-        document.getElementById("Text").style.fontSize='16px';
+        //document.getElementById("Text").style.fontSize='16px';
         document.getElementById("Text").style.textDecoration= "none";
         alert("Styles were removed from the text.")
     }
 }
 
 function mooButton(){
-    var textToChange = document.getElementById("Text");
-    textToChange.toUpperCase();
-    var parts= textToChange.split(".");
-    textTochange= parts.join("-Moo");
+    var str = '-Moo',
+    txt = document.getElementById('Text');
+    txt.style.textTransform="uppercase";
+    txt.value = txt.value.split('.').join('') + str;
     alert("The above text has changes. It will now have a moo at the end of words.")
 }
