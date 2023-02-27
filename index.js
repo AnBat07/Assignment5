@@ -25,8 +25,8 @@ function textChange() {
 }
 
 function mooButton(){
-    var str = document.getElementById("Text").value;
-    str.toUpperCase();
+    var str = document.getElementById("Text");
+    str = str.toUpperCase();
     var parts= str.split(".");
     str= parts.join("-Moo");
     //document.getElementById("text").value= str;
